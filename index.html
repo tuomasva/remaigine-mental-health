@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>Innovative Mind Care</title>
     <style>
         body, html {
@@ -11,7 +13,7 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            font-family: Arial, sans-serif;
+            font-family: 'Raleway', sans-serif;
         }
         .background {
             position: absolute;
@@ -19,13 +21,16 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('picture.jpeg') no-repeat center center/cover;
-            filter: blur(3px);
+            background-size: contain ;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url('picture.jpeg');
+            filter: blur(0px);
             z-index: -1;
         }
         .content {
             display: flex;
-            justify-content: center;
+            justify-content: right;
             align-items: center;
             height: 100%;
             text-align: left;
@@ -34,25 +39,36 @@
             color: white;
         }
         .text {
-            font-size: 6vw;
+            font-size: 7vw;
             line-height: 1.2;
             text-transform: uppercase;
             word-wrap: break-word;
+            text-align: end;
         }
+
     </style>
 </head>
 <body>
-    <div class="background"></div>
-    <div class="content">
-        <div class="text">
-            Reimagining<br>
-            Mental<br>
-            Health:<br>
-            Visualizing<br>
-            Your<br>
-            Inner<br>
-            Thoughts
-        </div>
+<div class="background">
+    <footer style="text-align: center; width: 100%; font-size: 10vw; margin-top: 5vh">
+        Generic clinic S.L.
+    </footer>
+</div>
+<div class="content">
+    <div class="text">
+        <span style="font-weight: bold">
+                  Reimagining<br>
+        Mental<br>
+        Health:<br>
+        </span>
+
+        Visualizing<br>
+        Your Inner<br>
+        Thoughts
     </div>
+</div>
+<footer style="position: absolute; bottom: 10vh; text-align: center; width: 100%">
+    Contact us: <br>(123) 456-7890<br>info@clinicname.com
+</footer>
 </body>
 </html>
